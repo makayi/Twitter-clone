@@ -1,0 +1,62 @@
+<div >
+  <nav class="navbar navbar-light">
+    <div class="navbar navbar-nav">
+
+      <div class="links-t">
+        <%= link_to "Sign in", '#',:class => "nav-item nav-link active links-t" %>
+        <%= link_to "Sign up", '#',:class => "nav-item nav-link " %>
+      </div>
+
+
+    </div>
+  </nav>
+  <section class="container">
+
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="header-text">Welcome to Twitter</h2>
+       <div  >
+         <p id="introductory-text" class="black-text">Connect with your friends — and other
+           fascinating people.
+           Get in-the-moment updates on the things that
+           interest you. And watch events unfold, in real time,
+           from every angle.</p>
+       </div>
+      </div>
+      <div>
+      <div class="col-lg-6">
+
+
+        <div id="sign-up-form" class="card card-block  card-inverse form form-group">
+          <div >
+            <p id="sign-up-form-text">Sign up with Twitter</p>
+          </div>
+          <%= form_tag :action => 'create' do %>
+              <%= label :name,'name' %>
+              <%= text_field 'users','name',:class=>"form-control" %>
+              <%= label :email ,'email' %>
+              <%= text_field 'users','email',:class=>"form-control" %>
+              <%= label :password,'password' %>
+              <%= password_field 'users','password',:class=>"form-control" %>
+              <%= label :password_confirmation,'Confirmation' %>
+              <%= password_field 'users','password_confirmation',:class=>"form-control" %>
+              <%= submit_tag "Create my account", class: "btn btn-large btn-primary sign-up-btn" %>
+              </div>
+          <% end %>
+          </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+<section>
+  <nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
+    <a class="navbar-brand" href="#">Jobs</a>
+    <a class="navbar-brand" href="#">Contact us </a>
+    <a class="navbar-brand" href="#">Help</a>
+  </nav>
+</section>
+</div>

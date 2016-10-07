@@ -1,0 +1,20 @@
+development:
+  adapter: mysql2
+  database: twittr_development
+  username: root
+  password: Theyearisfive.
+  host: localhost
+
+test:
+  adapter: mysql2
+  database: twittr_test
+  username: root
+  password: Theyearisfive.
+  host: localhost
+
+production:
+  adapter: mysql2
+  database: twittr_production
+  username: root
+  password: Theyearisfive.
+  host: localhost

@@ -1,0 +1,15 @@
+.centre h1{
+    text-align: center;
+}
+
+#main_content {
+
+}
+
+.links-t a:hover{
+    color: yellow;
+}
+
+.links-t{
+   float: right;
+}

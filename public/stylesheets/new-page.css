@@ -1,0 +1,56 @@
+.form {
+    margin-top: 20px;
+    border: 1px;
+    width: 400px;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 15px;
+    box-sizing: content-box;
+
+
+}
+
+
+.form input,label{
+    width: 250px;
+    margin-left: 30px;
+}
+
+.sign-up-btn{
+    margin-top: 14px;
+    margin-left: 20px;
+    width: 150px;
+
+}
+
+.header-text{
+    color: #1785c3;
+    font-size: 60px;
+
+
+
+}
+
+.card-img-size{
+    width: 539px;
+    height: 300px;
+}
+
+.black-text{
+    color: #000000;
+    font-size: 20px;
+
+}
+
+#sign-up-form-text{
+    margin-left: 28px;
+    color: #1f2021;
+}
+
+.bg-color{
+    background-color: #e7e7e7;
+}
+
+#introductory-text{
+    padding: 40px;
+}
