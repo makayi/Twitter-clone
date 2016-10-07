@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :name,:password,:email,:password_confirmation
+attr_accessor :name,:password,:password_confirmation,:email
   before_save {self.email=email.downcase}
   VALID_EMAIL_REGEX=/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
