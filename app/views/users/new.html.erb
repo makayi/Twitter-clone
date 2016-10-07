@@ -32,23 +32,26 @@
           <div >
             <p id="sign-up-form-text">Sign up with Twitter</p>
           </div>
-          <%= form_tag :action => 'create' do %>
-              <%= label :name,'name' %>
-              <%= text_field 'users','name',:class=>"form-control" %>
-              <%= label :email ,'email' %>
-              <%= text_field 'users','email',:class=>"form-control" %>
-              <%= label :password,'password' %>
-              <%= password_field 'users','password',:class=>"form-control" %>
-              <%= label :password_confirmation,'Confirmation' %>
-              <%= password_field 'users','password_confirmation',:class=>"form-control" %>
-              <%= submit_tag "Create my account", class: "btn btn-large btn-primary sign-up-btn" %>
-              </div>
+          <%= form_for(@user) do |f| %>
+              <%= f.label :name %>
+              <%= f.text_field :name %>
+
+              <%= f.label :email %>
+              <%= f.email_field :email %>
+
+              <%= f.label :password %>
+              <%= f.password_field :password %>
+
+              <%= f.label :password_confirmation, "Confirmation" %>
+              <%= f.password_field :password_confirmation %>
+
+              <%= f.submit "Create my account", class: "btn btn-primary" %>
           <% end %>
           </div>
 
 
       </div>
-
+</div>
     </div>
 
   </section>

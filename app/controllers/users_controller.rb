@@ -8,10 +8,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new(:user)
 
     if @user.save
-      redirect_to :action => 'show'
+      render 'new'
+      #redirect_to :action => 'show'
     else
 
       render 'new'
